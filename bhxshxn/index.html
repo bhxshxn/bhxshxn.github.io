@@ -193,16 +193,25 @@
         <h2 class="section-title">Contact</h2>
 
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
+          <form
+            action="https://formcarry.com/s/8axHbsxtAH"
+            class="contact__form"
+            method="POST"
+          >
             <input type="text" placeholder="Name" class="contact__input" />
             <input type="mail" placeholder="Email" class="contact__input" />
-            <textarea
-              name=""
+            <input
+              name="comment"
               id=""
               cols="0"
               rows="10"
               class="contact__input"
-            ></textarea>
+              placeholder="Comment"
+            ></input>
+            <input
+              type="hidden"
+              name="_gotcha"
+            /><!-- use this to prevent spam -->
             <input type="submit" value="Send" class="contact__button button" />
           </form>
         </div>
