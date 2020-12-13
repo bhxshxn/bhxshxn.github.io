@@ -453,3 +453,7 @@ img {
     right: 10%;
   }
 }
+
+.footer a {
+  color: white;
+}
