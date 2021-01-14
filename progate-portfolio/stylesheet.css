@@ -68,4 +68,10 @@ nav button{
 .nav-ul.show{
     display: flex;
 } 
+.image{
+   display: none;
+}
+.top-container{
+    height: 100vh;
+}
 }
