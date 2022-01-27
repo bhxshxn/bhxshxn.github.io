@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 3em 10em 10em 10em;
+}
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(75, 240, 212);
+    padding: 3em 1em 3em 1em;
+
+}
+
+h1 {
+    font-weight: 300;
+    max-width: 300px;
+    text-align: center;
+}
+
+
+label {
+    font-weight: lighter;
+}
+
+button {
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.task-input {
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+input[type=text], textarea {
+    -webkit-transition: all 0.20s ease-in-out;
+    -moz-transition: all 0.20s ease-in-out;
+    -ms-transition: all 0.20s ease-in-out;
+    -o-transition: all 0.20s ease-in-out;
+    outline: none;
+    border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, textarea:focus {
+    box-shadow: 0 0 1px rgb(75, 240, 212);
+    border: 1px solid rgb(75, 240, 212);
+}
+
+.submit {
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: white;
+    border: solid 1px rgb(75, 240, 212);
+    font-size: 0.9em;
+    font-weight: lighter;
+    color: rgb(75, 240, 212);
+    padding: 0.4em;
+    border-radius: 5%;
+
+}
+
+.todo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 800px;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 1px rgb(175, 175, 175); */
+    margin: 2em 1em 0em 1em;
+    padding: 0em 1em 1em 1em;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(146, 146, 146, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+.todo-list-task {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0em 1em 1em 1em;
+    color: rgb(75, 240, 212);
+    text-align: center;
+    max-width: 600px;
+    /* border: 1px solid grey; */
+    padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.remove-button {
+    align-items: center;
+    margin: 0em 0em 0em 0.6em;
+    color: rgb(75, 240, 212);
+
+}
+
+.todo-list-task__done {
+    order: 1;
+    text-decoration: line-through;
+    color: black;
+}
